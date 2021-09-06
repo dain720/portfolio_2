@@ -1,0 +1,590 @@
+/* 
+    main color: #86b5ce
+    bg color: #ebebeb
+    font color: #535353
+*/
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #535353;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {text-decoration: none;}
+li {list-style-type: none;}
+/* html{scroll-behavior: smooth; height: 100%;} */
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: relative;
+}
+/* main */
+#main {
+    width: 100%; height: 100%;
+    background: #ebebeb;
+}
+.main-wrap {
+    width: 1200px; height: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+.main-wrap > h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Lato', sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 280px;
+}
+.main-wrap > p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 7px;
+    margin-top: 410px;
+    /* outline: 1px solid red; */
+}
+.line_width {
+    position: absolute;
+    width: 580px;
+    height: 40px;
+    margin-top: 360px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #86b5ce;
+    /* animation */
+    animation-name: line;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes line {
+    from {width: 0px;}
+    to {width: 580px;}
+}
+
+.line_length {
+    position: absolute;
+    width: 1px;
+    height: 250px;
+    top: 500px;
+    background: #535353;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll_down {
+    position: absolute;
+    margin-top: 780px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* animation */
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {top: 0px;}
+    50% {top: 10px;}
+    100% {top: 0px;}
+}
+
+.scroll_down img {
+    width: 45px; height: 45px;
+}
+.main-wrap > .scroll-txt {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 850px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* about */
+#about {
+    width: 100%;
+    height: 100%;
+}
+#about > .contents {
+    width: 1200px; height: 1080px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+#about article {
+    position: absolute;
+    margin-top: 100px;
+}
+
+#about  .photo > h1 {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    font-size: 65px;
+    line-height: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    top: 50px;
+    padding-bottom: 50px;
+}
+#about .name_line {
+    position: absolute;
+    width: 285px;
+    height: 25px;
+    top: 80px;
+    background: #86b5ce;
+}
+#about .photo > .me {
+    width: 285px; height: 360px;
+    line-height: 500px;
+    margin-top: 140px;
+    /* background: #ccc; */
+    text-align: center;
+    overflow: hidden;
+}
+
+#about .intro p{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+#about .intro .span1{
+    font-weight: 700;
+    color: #000;
+}
+#about .intro .span2{
+    font-weight: 700;
+    color: #86b5ce;
+}
+
+#about .intro_ex .s-line {
+    width: 40px; height: 1px;
+    margin: 18px 0 0 18px;
+    border-top: 3px solid #86b5ce;
+}
+#about .intro_ex p {
+    margin: 15px 0 0 15px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.text_box1, .text_box2 {
+    margin-top: 75px;
+    margin-left: 400px;
+}
+.text_box2 {
+    margin-left: 800px;
+}
+.text_box1 h2 {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    color: #86b5ce;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+.text_box1 p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.text_box1 span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #888888;
+}
+.text_box2 {
+    overflow: hidden;
+    padding-right: 30px;
+}
+.text_box2 h2 {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    color: #86b5ce;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+.text_box2 h2:last-child {
+    padding-bottom: 15px;
+}
+.text_box2 h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+.text_box2 p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.text_box2 span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #888888;
+}
+.text_box2 .percent {
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 285px;
+    margin-top: -25px;
+    margin-bottom: 10px;
+}
+
+.skills_bg {
+    position: absolute;
+    width: 270px;
+    height: 16px;
+    margin-top: 5px;
+    background: #e1e1e1;
+}
+.skills1 {
+    position: relative;
+    width: 210px;
+    height: 16px;
+    margin-top: 5px;
+    background: #86b5ce;
+}
+
+.skills2 {
+    position: relative;
+    width: 210px;
+    height: 16px;
+    margin-top: 5px;
+    background: #86b5ce;
+}
+
+.skills3 {
+    position: relative;
+    width: 130px;
+    height: 16px;
+    margin-top: 5px;
+    background: #86b5ce;
+}
+
+.skills4 {
+    position: relative;
+    width: 240px;
+    height: 16px;
+    margin-top: 5px;
+    background: #86b5ce;
+}
+
+.skills5 {
+    position: relative;
+    width: 230px;
+    height: 16px;
+    margin-top: 5px;
+    background: #86b5ce;
+}
+
+.skills6 {
+    position: relative;
+    width: 220px;
+    height: 16px;
+    margin-top: 5px;
+    background: #86b5ce;
+}
+
+.skills7 {
+    position: relative;
+    width: 220px;
+    height: 16px;
+    margin-top: 5px;
+    background: #86b5ce;
+}
+
+.skills8 {
+    position: relative;
+    width: 190px;
+    height: 16px;
+    margin-top: 5px;
+    background: #86b5ce;
+}
+
+
+/* 포트폴리오_1 */
+#portfolio_1 {
+    width: 100%; height: 100%;
+    background-image: url(../images/portfolio_bg.jpg);
+    background-size: cover;
+}
+.portfolio1-wrap {
+    position: relative;
+    width: 1200px;
+    height: 1080px;
+    margin: 0 auto;
+}
+.portfolio1-wrap > .mockup1 {
+    position: absolute;
+    top: 300px;
+    right: 0;
+}
+.portfolio1-wrap .color_box > .color_1 {
+    width: 48px; height: 48px;
+    background: #197e93;
+}
+.portfolio1-wrap .color_box > .color_2 {
+    width: 48px; height: 48px;
+    background: #fff;
+    border: solid 1px #ccc;
+}
+
+
+/* 포트폴리오_22*/
+#portfolio_2 {
+    width: 100%; height: 100%;
+    background-image: url(../images/portfolio_bg.jpg);
+    background-size: cover;
+}
+.portfolio2-wrap {
+    position: relative;
+    width: 1200px;
+    height: 1080px;
+    margin: 0 auto;
+}
+.portfolio2-wrap > .mockup2 {
+    position: absolute;
+    top: 300px;
+    right: 0;
+}
+.portfolio2-wrap .color_box > .color_1 {
+    width: 48px; height: 48px;
+    background: #3bc0cc;
+}
+.portfolio2-wrap .color_box > .color_2 {
+    width: 48px; height: 48px;
+    background: #fff;
+    border: solid 1px #ccc;
+}
+
+
+
+/* 포트폴리오_3 */
+#portfolio_3 {
+    width: 100%; height: 100%;
+    background-image: url(../images/portfolio_bg.jpg);
+    background-size: cover;
+}
+.portfolio3-wrap {
+    position: relative;
+    width: 1200px;
+    height: 1080px;
+    margin: 0 auto;
+}
+.portfolio3-wrap > .mockup3 {
+    position: absolute;
+    top: 300px;
+    right: 0;
+}
+.portfolio3-wrap .color_box > .color_1 {
+    width: 48px; height: 48px;
+    background: #0061ac;
+}
+.portfolio3-wrap .color_box > .color_2 {
+    width: 48px; height: 48px;
+    background: #20c4f4;
+}
+.portfolio3-wrap .color_box > .color_3 {
+    width: 48px; height: 48px;
+    background: #094770;
+}
+
+
+/* 포트폴리오_4 */
+#portfolio_4 {
+    width: 100%; height: 100%;
+    background-image: url(../images/portfolio_bg.jpg);
+    background-size: cover;
+}
+.portfolio4-wrap {
+    position: relative;
+    width: 1200px;
+    height: 1080px;
+    margin: 0 auto;
+}
+.portfolio4-wrap > .mockup4 {
+    position: absolute;
+    top: 300px;
+    right: 0;
+}
+.portfolio4-wrap .color_box > .color_1 {
+    width: 48px; height: 48px;
+    background: #FFCB00;
+}
+.portfolio4-wrap .color_box > .color_2 {
+    width: 48px; height: 48px;
+    background: #fff;
+    border: solid 1px #ccc;
+}
+
+
+/* 포트폴리오 컨텐츠(공통) */
+.text_box {
+    position: absolute;
+    top: 290px;
+    right: 0;
+}
+.text_box > h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #86b5ce;
+    margin-left: -3px;
+    line-height: 50px;
+}
+.text_box > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 8px;
+}
+.text_box > h2 > span {
+    font-size: 15px;
+    font-weight: 500;
+}
+.text_box > p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 6px;
+}
+.text_box h3 {
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 35px;
+}
+.text_box > .color_box {
+    position: relative;
+    width: 1200px;
+    height: 48px;
+    margin-top: 14px;
+}
+.text_box > .color_box div {
+    float: left;
+    margin-left: 28px;
+}
+.text_box > .color_box div:nth-child(1) {
+    margin-left: 0;
+}
+
+.portfolio_btn {
+    position: absolute;
+    height: 50px;
+    bottom: 140px;
+    right: 45px;
+}
+.portfolio_btn > a {
+    float: right;
+    margin-right: 35px;
+    width: 230px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #535353;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #535353;
+}
+.portfolio_btn a:hover {
+    border: 1px solid #fff;
+    background: #86b5ce;
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+/* 포트폴리오 other works */
+#portfolio_other {
+    width: 100%; height: 100%;
+    /* background: #ebebeb; */
+}
+.otherwork {
+    position: relative;
+    width: 1200px; height: 1080px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+.otherwork > .txt_line {
+    position: absolute;
+    width: 380px;
+    height: 20px;
+    top: 90px;
+    background: #86b5ce;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.otherwork > h2 {
+    position: absolute;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    top: 50px;
+}
+.otherwork div{
+    display: inline-block;
+    padding: 18px;
+}
+.otherwork div:nth-child(1), .otherwork div:nth-child(2), .otherwork div:nth-child(3) {
+    padding-top: 200px;
+}
+.otherwork p {
+    position: absolute;
+    width: 360px;
+    text-align: center;
+    top: 34%;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.otherwork > .work4 p {
+    opacity: 0;
+    top: 71%;
+}
+.otherwork > .work5 p {
+    opacity: 0;
+    top: 71%;
+}
+.otherwork > .work6 p {
+    opacity: 0;
+    top: 71%;
+}
+.otherwork img {
+    width: 360px; height: 360px;
+    transition: 0.5s;
+    /* filter: grayscale(100%); */
+}
+.otherwork .bg {
+    position: absolute;
+    width: 360px; height: 360px;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: 0.5s;
+}
+.otherwork a:hover p {
+    display: block;
+    opacity: 1;
+}
+.otherwork a:hover .bg {
+    opacity: 1;
+}
